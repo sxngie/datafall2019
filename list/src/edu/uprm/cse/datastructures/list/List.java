@@ -28,6 +28,26 @@ public interface List<E> extends Iterable<E> {
 	
 	public void clear();
 	
-	public Object[] toArray();	
+	public Object[] toArray();
+
+	public List<String> reverse();	
+	
+	public int replaceAll (E e, E f);
+	
+//	public static int findMinValue (List<Integer> L) {
+//		if (L.isEmpty()) {
+//			return 0;
+//		}
+//		else {
+//			int min = L.get(0);
+//			for (int h = 1; h < L.size(); h++) {
+//					if (L.get(h) <= min) {
+//						min = L.get(h);
+//					}
+//				}
+//			return min;
+//			}
+//	}
+
 
 }

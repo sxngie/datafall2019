@@ -200,4 +200,31 @@ public class ArrayList<E> implements List<E> {
 		return result;
 	}
 
+	public List<String> reverse() {
+		List<E> M = new ArrayList<E>(this.size());
+		
+		if (this.isEmpty() || this.size() == 0) {
+			return (List<String>) M;
+		}
+		else {
+			for (int i = this.size()-1; i >= 0; i--) {
+				M.add(this.get(i));
+			}
+			return (List<String>) M;
+		}
+	}
+	
+	public int replaceAll (E e, E f) {
+		int replaced = 0;
+		
+		for (int i = 0; i < this.size(); i++) {
+			if (this.get(i).equals(e)) {
+				this.replace(i, f);
+				replaced++;
+			}
+		}
+		return replaced;
+		
+	}
+
 }

@@ -258,4 +258,19 @@ public class SinglyLinkedList<E> implements List<E> {
 		return count;
 	}
 
+
+	@Override
+	public List<String> reverse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public int replaceAll(E e, E f) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
 }
